@@ -12,6 +12,7 @@
   --color3: #0c0c0c;
   --color4: #cfcfcf;
   --color5: #707070;
+  --color6: #eef5fb;
 }
 
 body {
@@ -492,6 +493,103 @@ a {
 
 /* SECTION MAINTENANCE END */
 
+/* SECTION BENEFIT START */
+.benefits__section {
+  margin-top: 150px;
+  background-color: var(--color6);
+  border-radius: 1em;
+  padding: 25px;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+}
+.benefit__wrapper {
+  display: flex;
+  gap: 2em;
+}
+.benefit__content-left {
+  flex: 1;
+  position: relative;
+}
+.benefit__content-left img {
+  width: 100%;
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+}
+.box__benef-bottom {
+  position: absolute;
+  width: 133px;
+  left: 20px;
+  bottom: 20px;
+  background-color: var(--color1);
+  border-radius: 1em;
+  padding: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+}
+.box__benef-bottom img {
+  width: 60px;
+}
+.box__benef-bottom h1 {
+  font-size: 1.35rem;
+}
+.benefit__content-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3em;
+}
+.benefit__top-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+}
+.caption__benefit-1 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+.benefit__info {
+  display: flex;
+  gap: 2em;
+  align-items: flex-start;
+}
+.icon__dashed-2 {
+  max-width: 15.5%;
+}
+.icon__dashed-6 {
+  max-width: 50%;
+}
+.dashed__caption-item {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.dashed__caption-item span,
+.none-caption {
+  font-size: 3.4rem;
+  font-weight: 500;
+}
+
+.benefit__bottom-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
+.info__detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+/* SECTION BENEFIT END */
 /* MEDIA QUERY START */
 @media screen and (max-width: 991px) {
   .navbar__menu {
@@ -523,6 +621,10 @@ a {
   }
   .maintenance__row-3 {
     flex-direction: row;
+  }
+
+  .benefit__wrapper {
+    flex-direction: column;
   }
 }
 
@@ -625,6 +727,17 @@ a {
     width: 32px;
   }
   .box__mt-bottom h1 {
+    font-size: 1rem;
+  }
+
+  .dashed__caption-item span,
+  .none-caption {
+    font-size: 2.5rem;
+  }
+  .box__benef-bottom img {
+    width: 40px;
+  }
+  .box__benef-bottom h1 {
     font-size: 1rem;
   }
 }
